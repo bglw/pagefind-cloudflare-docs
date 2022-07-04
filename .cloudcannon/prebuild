@@ -1,0 +1,2 @@
+git config --global --add safe.directory /usr/local/__site/src
+npm i

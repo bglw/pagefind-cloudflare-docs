@@ -1,7 +1,7 @@
 {{- $DATA := (index $.Site.Data .Section) -}}
 {{- $title := default (replace (title .Section) "-" " ") $DATA.name -}}
 
-<div class="DocsToolbar--tools">
+<div class="DocsToolbar--tools" data-pagefind-filter="product:{{ $title }}">
   <button data-feedback="true" class="DocsToolbar--feedback Button Button-is-docs-secondary">
     <svg fill="none"
       xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17">
